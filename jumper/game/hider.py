@@ -75,7 +75,7 @@ class Hider:
             "    └───┴───┴───┴───┴───┴───┴───┘"
         ]
         self._keyboard_entry = []
-        self._lives = 7
+        self._lives = 4
         for i in self._word:
             if i == ' ':
                 self._answer.append(' ')
