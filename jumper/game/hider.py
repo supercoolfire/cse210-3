@@ -24,7 +24,7 @@ class Hider:
         # self._word = 'tae'
         try:
             self._word = random.choice(
-                open(f'{os.path.dirname(os.path.abspath(__file__))}\words.txt').read().split())
+                open(f'{os.path.dirname(os.path.abspath(__file__))}\words.txt').read().split()).upper()
         except FileNotFoundError:
             try:
                 with open(os.path.join(sys.path[0], "game\words.txt"), "r") as f:
